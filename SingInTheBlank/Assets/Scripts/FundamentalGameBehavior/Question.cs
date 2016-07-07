@@ -12,12 +12,12 @@ public class Question : MonoBehaviour {
 	/*checks the user's answer*/
 	public bool answerCorrect()
 	{
-
+		return false;
 	}
 
 	public bool displayActualAnswer()
 	{
-
+		return false;
 	}
 
 }

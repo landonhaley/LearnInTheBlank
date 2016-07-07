@@ -11,8 +11,8 @@ public class Upload : MonoBehaviour {
 		
 	}
 
-	public Quiz ParseFile()
+	/*public Quiz ParseFile()
 	{
 		
-	}
+	}*/
 }
