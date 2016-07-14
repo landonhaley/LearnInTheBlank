@@ -1,12 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-<<<<<<< HEAD
-- path: Assets/Scenes/StartScene.unity
-=======
-- path: Assets/Scenes/QuizResults.unity
->>>>>>> e21fc92fe08096e7961412e7d0294cd43b7f1bc3
-=======
-- path: Assets/Scenes/Upload.unity
->>>>>>> 0b1f81a7363741acc42d9bb71edbaae30007427b
+- path: Assets/Scenes/Quizzing.unity
   isLoaded: 1
   isActive: 1
