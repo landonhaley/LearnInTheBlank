@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
+- path: Assets/Scenes/Quizzing.unity
+=======
 - path: Assets/Scenes/CompletedQuiz.unity
+>>>>>>> a1cdabdba140815117d48c79d8cfb26694c26c95
   isLoaded: 1
   isActive: 1
