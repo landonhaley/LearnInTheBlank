@@ -14,6 +14,18 @@ public class ControlCenter : Singleton<ControlCenter> {
 		Application.Quit();
 	}
 
+	public void Awake() 
+	{
+
+	}
+
+	public void LoadMainWindow()
+	{
+		SceneManager.LoadScene(0);
+		GameObject.DontDestroyOnLoad(gameObject);
+	}
+
+
 	/*called from Quizzes scene*/
 	public void LoadMainWindow(List<Quiz> _quizzes)
 	{
