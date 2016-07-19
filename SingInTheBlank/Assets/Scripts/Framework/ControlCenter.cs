@@ -14,11 +14,23 @@ public class ControlCenter : Singleton<ControlCenter> {
 		Application.Quit();
 	}
 
+	public void Awake() 
+	{
+
+	}
+
+	public void LoadMainWindow()
+	{
+		SceneManager.LoadScene(9);
+		GameObject.DontDestroyOnLoad(gameObject);
+
+	}
+
 	/*called from Quizzes scene*/
 	public void LoadMainWindow(List<Quiz> _quizzes)
 	{
 		quizzes = _quizzes;
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(9);
 		GameObject.DontDestroyOnLoad(gameObject);
 	}
 
@@ -26,7 +38,7 @@ public class ControlCenter : Singleton<ControlCenter> {
 	public void LoadMainWindow(List<Group> _groups)
 	{
 		groups = _groups;
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene(9);
 		GameObject.DontDestroyOnLoad(gameObject);
 	}
 
