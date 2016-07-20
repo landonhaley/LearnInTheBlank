@@ -12,3 +12,6 @@
 /Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/Temp/bin/Debug/Unity.CecilTools.dll
 /Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/Temp/bin/Debug/Mono.Cecil.Pdb.dll
 /Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/Temp/bin/Debug/Mono.Cecil.Mdb.dll
+/Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/droppingbasses/Google Drive/University of Central Florida/Summer 2016/OO Processes/project/SingInTheBlank/obj/Debug/Assembly-CSharp.dll.mdb
