@@ -1,13 +1,17 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Framework/ReadFiles.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Program.cs">
     <Files>
-      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="30" Column="18" />
-      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Group.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/Buttons/ToQuizzesButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Framework\Singleton.cs" Line="58" Column="1" />
+      <File FileName="Assets\Scripts\Framework\ControlCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Framework\ReadFiles.cs" Line="81" Column="4" />
+      <File FileName="Assets\Scripts\FundamentalGameBehavior\Group.cs" Line="7" Column="26" />
+      <File FileName="Assets\Scripts\FundamentalGameBehavior\Quiz.cs" Line="2" Column="14" />
+      <File FileName="Assets\Scripts\GUI\Buttons\ToQuizzesButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FundamentalGameBehavior\Question.cs" Line="15" Column="32" />
+      <File FileName="Assets\Scripts\FundamentalGameBehavior\Word.cs" Line="3" Column="14" />
+      <File FileName="Assets\Scripts\GUI\NewFileBrowser.cs" Line="36" Column="5" />
+      <File FileName="Assets\Scripts\Program.cs" Line="68" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

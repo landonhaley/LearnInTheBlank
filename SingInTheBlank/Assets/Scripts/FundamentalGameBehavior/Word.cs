@@ -1,7 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
 
-public class Word : MonoBehaviour {
+[Serializable]
+public class Word{
 
 	public string word;
 	public bool blank = false;
