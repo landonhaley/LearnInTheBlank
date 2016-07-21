@@ -1,26 +1,10 @@
-﻿using UnityEngine;
-using System.Collections;
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class Group : MonoBehaviour {
-
-	public string groupname;
-	public int points = 0;
-
-	// Use this for initialization
-	void Start () 
+[Serializable]
+	public class Group
 	{
-	
+		public string groupname;
+		public int points = 0;
 	}
-	
-	// Update is called once per frame
-	void Update () 
-	{
-	
-	}
-
-	public Group()
-	{
-		
-	}		
-}
