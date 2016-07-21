@@ -15,6 +15,5 @@ public class CancelButton : MonoBehaviour {
 
 	public void OnClick()
 	{
-		ControlCenter.Instance.LoadMainWindow();
 	}
 }

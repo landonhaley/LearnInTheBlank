@@ -1,18 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
 
 public class Group : MonoBehaviour {
 
-	public string name;
-	public int points;
+	public string groupname;
+	public int points = 0;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 	
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 	
 	}
+
+	public Group()
+	{
+		
+	}		
 }

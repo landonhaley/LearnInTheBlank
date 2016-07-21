@@ -1,26 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Effects/FadeIn.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Framework/ReadFiles.cs">
     <Files>
-      <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="4" Column="35" />
-      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="82" Column="2" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Results.cs" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="3" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="7" Column="28" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Upload.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/QuizSelect.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/GroupSelect.cs" Line="11" Column="2" />
-      <File FileName="Assets/EmptyClass.cs" Line="57" Column="2" />
-      <File FileName="Assets/Scripts/GUI/Buttons/SelectGroupButton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/Buttons/ToUploadButton.cs" Line="10" Column="2" />
-      <File FileName="Assets/Scripts/GUI/Buttons/ToQuizzesButton.cs" Line="9" Column="3" />
-      <File FileName="Assets/Scripts/GUI/Buttons/ToGroupsButton.cs" Line="9" Column="3" />
-      <File FileName="Assets/Scripts/GUI/Buttons/QuitButton.cs" Line="9" Column="3" />
-      <File FileName="Assets/Scripts/GUI/Buttons/GiveQuizButton.cs" Line="9" Column="3" />
-      <File FileName="Assets/Scripts/Effects/SpinningLogo.cs" Line="15" Column="51" />
-      <File FileName="Assets/Scripts/Effects/FadeIn.cs" Line="20" Column="25" />
-      <File FileName="Assets/Scripts/Effects/FadeOut.cs" Line="16" Column="12" />
+      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="30" Column="18" />
+      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Group.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GUI/Buttons/ToQuizzesButton.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
