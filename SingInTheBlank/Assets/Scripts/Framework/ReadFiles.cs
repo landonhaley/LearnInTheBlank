@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 
 public class ReadFiles : MonoBehaviour {
+
+	public List<Group> temp = new List<Group>();
 
 	// Use this for initialization
 	void Start () {
@@ -29,10 +31,12 @@ public class ReadFiles : MonoBehaviour {
 			{
 				Group _group = new Group ();
 				_group.groupname = line;
-				ControlCenter.Instance.groups.Add (_group);
-			
+				temp.Add (_group);
 			}	
 		}
+
+		ControlCenter.Instance.CreateGroups (temp);
+		ControlCenter.Instance.num = 9;
 	}
 
 	void populateQuiz()
@@ -75,8 +79,6 @@ public class ReadFiles : MonoBehaviour {
 
 				Question _question = new Question();
 				_question.setSentence (currentLine);
-				foreach (Word s in _question.sentence)
-					print (s.word);
 			}
 		}
 	}

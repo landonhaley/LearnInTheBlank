@@ -8,6 +8,7 @@ public class ControlCenter : Singleton<ControlCenter> {
 	public List<Quiz> quizzes;
 	public List<Group> groups;
 	public Quiz quiz;
+	public int num;
 
 	public void Quit() 
 	{
@@ -16,7 +17,7 @@ public class ControlCenter : Singleton<ControlCenter> {
 
 	public void Awake() 
 	{
-
+		
 	}
 
 	public void LoadMainWindow()
@@ -100,6 +101,11 @@ public class ControlCenter : Singleton<ControlCenter> {
 		Application.LoadLevel("Score");
 		GameObject.DontDestroyOnLoad(gameObject);
 	}*/
+
+
+	public void CreateGroups(List<Group> _groups){
+		groups = _groups;
+	}
 
 	public override void Destroyed(){}
 
