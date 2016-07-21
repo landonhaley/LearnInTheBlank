@@ -79,7 +79,6 @@ public class ReadFiles : MonoBehaviour {
 
 				Question _question = new Question();
 				_question.setSentence (currentLine);
-				foreach (Word s in _question.sentence)
 			}
 		}
 	}
