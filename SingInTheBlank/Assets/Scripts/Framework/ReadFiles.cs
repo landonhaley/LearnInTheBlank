@@ -10,6 +10,7 @@ public class ReadFiles : MonoBehaviour {
 	void Start () {
 
 		populateGroupList ();
+		populateQuiz ();
 	}
 	
 	// Update is called once per frame
@@ -29,7 +30,54 @@ public class ReadFiles : MonoBehaviour {
 				Group _group = new Group ();
 				_group.groupname = line;
 				ControlCenter.Instance.groups.Add (_group);
+			
 			}	
+		}
+	}
+
+	void populateQuiz()
+	{
+
+		string[] quizFiles = Directory.GetFiles ("Quizzes");
+		foreach (string fileName in quizFiles) 
+			loadQuiz (fileName);
+		
+				
+
+
+		/*
+		string quizpath = "quizzes.txt", quizLine;
+		FileStream quiz_in = new FileStream (quizpath, FileMode.Open);
+
+		using (StreamReader quizRead = new StreamReader (quiz_in)) 
+		{
+			while ((quizLine = quizRead.Readline ()) != null) 
+			{
+				Quiz _quizzes = new Quiz ();
+				_quizzes.title = quizLine;
+				ControlCenter.Instance.quizzes.Add (_quizzes);
+			}
+		}
+		*/
+	}
+
+	void loadQuiz (string fileName)
+	{
+		FileStream quiz_in = new FileStream (fileName, FileMode.Open);
+
+		Quiz _quizzes = new Quiz ();
+		_quizzes.title = fileName;
+		string currentLine;
+
+		using (StreamReader quizRead = new StreamReader (quiz_in)) 
+		{
+			while ((currentLine = quizRead.ReadLine()) != null) {
+
+				Question _question = new Question();
+				_question.setSentence (currentLine);
+				foreach (Word s in _question.sentence)
+					print (s.word);
+			}
 		}
 	}
 }
