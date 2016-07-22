@@ -30,7 +30,6 @@ public class DeleteGroup : MonoBehaviour {
 		List<Group> _groups = new List<Group> ();
 
 		GameObject[] gameObjects = FindObjectsOfType(typeof(GameObject)) as GameObject[];
-		print ("WAH"+ gameObjects.Length);
 
 		for (int i=0; i < gameObjects.Length; i++){
 			
