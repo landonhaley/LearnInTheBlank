@@ -26,23 +26,38 @@ public class NewFileBrowser : MonoBehaviour
 
 		string path = EditorUtility.OpenFilePanel ("Load Text File", "", "");
 		string[] files = Directory.GetFiles (path);
-		string newPath;
+
 
 		foreach (string file in files)
 			if (file.EndsWith (".txt")) {
 				inputFieldOb.text = file;
-				newPath = file;
-				//print (file);
-				createParse (newPath);
 
+				//print (file);
+				//sentence = createParse (newPath);
+				/*
+				printPath = newPath;
+				printPath = Path.ChangeExtension (printPath, ".parse");
+				print (printPath);
+				//printPath = path.Replace (initPath, initPath + ".parse");
+				FileStream parseFile = new FileStream ("../../../Quizzes/" + printPath, FileMode.Create);
+				*/
 			}
 
 
 
 	}
 
-	public void createParse(string fileName)
+	public void createParse()
 	{
+		//InputField inputFieldOb = inputFieldGo.GetComponent<InputField> ();
+		//string path;
+		//string printPath;
+		//List<string> sentence;
+		//path = inputFieldOb.text;
+		//printPath = path;
+		//printPath = Path.ChangeExtension (printPath, ".parse");
+		//FileStream parseFile = new FileStream (printPath, FileMode.Create);
+
 		
 	}
 
