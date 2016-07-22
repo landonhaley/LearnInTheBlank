@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\AddGroup.cs" />
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\DeleteGroup.cs" />
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\DeleteQuiz.cs" />
+     <Compile Include="Assets\Scripts\FundamentalGameBehavior\Generate.cs" />
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\Group.cs" />
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\LoadGroups.cs" />
      <Compile Include="Assets\Scripts\FundamentalGameBehavior\LoadQuizzes.cs" />
