@@ -11,7 +11,7 @@ public class ControlCenter : Singleton<ControlCenter> {
 	public int num;
 
 	public void Quit() 
-	{
+	{		
 		Application.Quit();
 	}
 
