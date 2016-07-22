@@ -1,6 +1,8 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FundamentalGameBehavior/SaveLists.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\FundamentalGameBehavior\Generate.cs">
     <Files>
       <File FileName="Assets/Scripts/FundamentalGameBehavior/SaveLists.cs" Line="13" Column="3" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Group.cs" Line="3" Column="1" />
@@ -10,6 +12,8 @@
       <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="58" Column="1" />
       <File FileName="Assets/Scripts/GUI/Buttons/QuitButton.cs" Line="4" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Upload.cs" Line="1" Column="1" />
+	  <File FileName="Assets\Scripts\FundamentalGameBehavior\LoadQuizzes.cs" Line="50" Column="1" />
+      <File FileName="Assets\Scripts\FundamentalGameBehavior\Generate.cs" Line="54" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
