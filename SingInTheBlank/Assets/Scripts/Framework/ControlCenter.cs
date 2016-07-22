@@ -52,18 +52,16 @@ public class ControlCenter : Singleton<ControlCenter> {
 
 
 	/* quiz selection calls group selection*/
-	public void LoadGroupSelect(Quiz _quiz)
+	public void LoadGroupSelect()
 	{
-		quiz = _quiz;
 		SceneManager.LoadScene(6);
 		GameObject.DontDestroyOnLoad(gameObject);
 	}
 		
 
 	/*group selection calls quizzing*/
-	public void LoadQuizzing(List<Group> _groups)
+	public void LoadQuizzing()
 	{
-		quiz.selectedGroups = _groups;
 		SceneManager.LoadScene(5);
 		GameObject.DontDestroyOnLoad(gameObject);
 	}

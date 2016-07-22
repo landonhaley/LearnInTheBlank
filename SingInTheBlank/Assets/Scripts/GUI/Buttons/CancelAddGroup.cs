@@ -3,14 +3,13 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class AddGroup : MonoBehaviour {
+public class CancelAddGroup : MonoBehaviour {
 
 	public GameObject bg;
 
 	public void OnClick(){
 
-		bg.SetActive (true);
+		bg.SetActive (false);
 
 	}
-
 }

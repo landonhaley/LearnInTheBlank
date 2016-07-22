@@ -6,13 +6,12 @@ using System.IO;
 
 [Serializable]
 public class Question{
-	public List<Word> sentence;
+	public List<Word> sentence = new List<Word> ();
 	public string userAnswer;
 	private string actualAnswer;
 
 	public void setSentence (string _sentence)
 	{
-		sentence = new List<Word> ();
 		string[] words = _sentence.Split (' ');
 		foreach (string s in words) {
 			Word _word = new Word ();
