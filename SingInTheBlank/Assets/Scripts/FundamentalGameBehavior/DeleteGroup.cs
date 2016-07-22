@@ -49,7 +49,7 @@ public class DeleteGroup : MonoBehaviour {
 		}
 
 		ControlCenter.Instance.groups = _groups;
-		print (_groups.Count);
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }
 	

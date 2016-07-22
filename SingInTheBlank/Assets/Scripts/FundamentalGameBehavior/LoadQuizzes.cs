@@ -3,16 +3,17 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
 
-public class LoadGroups : MonoBehaviour {
+public class LoadQuizzes : MonoBehaviour {
 
 	public GameObject itemPrefab;
 	public GameObject content;
 	public GameObject scrollbar;
+	public bool selectOne;
 
 	public int columnCount = 1, itemCount;
 
 	void Start () {
-		List<Group> temp = ControlCenter.Instance.groups;
+		List<Quiz> temp = ControlCenter.Instance.quizzes;
 		itemCount = temp.Count;
 		RectTransform rowRectTransform = itemPrefab.GetComponent<RectTransform>();
 		RectTransform containerRectTransform = content.GetComponent<RectTransform>();
@@ -24,13 +25,13 @@ public class LoadGroups : MonoBehaviour {
 		int rowCount = itemCount / columnCount;
 		if (itemCount % rowCount > 0)
 			rowCount++;
-	
+
 		//adjust the height of the container so that it will just barely fit all its children
 		float scrollHeight = height * rowCount;
 		containerRectTransform.offsetMin = new Vector2(containerRectTransform.offsetMin.x, -scrollHeight);
 		//containerRectTransform.offsetMax = new Vector2(containerRectTransform.offsetMax.x, scrollHeight/2);
 		int j = 0, i = 0;
-		foreach (Group groupy in temp)
+		foreach (Quiz quizzy in temp)
 		{
 			//this is used instead of a double for loop because itemCount may not fit perfectly into the rows/columns
 			if (i % columnCount == 0)
@@ -38,10 +39,14 @@ public class LoadGroups : MonoBehaviour {
 
 			//create a new item, name it, and set the parent
 			GameObject newItem = Instantiate(itemPrefab) as GameObject;
-			newItem.name = "Group " + i;
-			Text groupLabel = newItem.GetComponentInChildren<Text> ();
-			groupLabel.text = groupy.groupname;
+			newItem.name = "Quiz " + i;
+			if (selectOne) {
+				newItem.GetComponent<Toggle> ().group = content.GetComponent<ToggleGroup> ();
+			}
+			Text quizLabel = newItem.GetComponentInChildren<Text> ();
+			quizLabel.text = quizzy.title;
 			newItem.transform.SetParent(content.transform, false);
+
 			content.GetComponent<ToggleGroup> ().RegisterToggle (newItem.GetComponent<Toggle>());
 
 			//move and size the new item
@@ -60,5 +65,5 @@ public class LoadGroups : MonoBehaviour {
 
 
 	}
-		
 }
+

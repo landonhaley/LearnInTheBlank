@@ -69,8 +69,8 @@ public class ReadFiles : MonoBehaviour {
 	{
 		FileStream quiz_in = new FileStream (fileName, FileMode.Open);
 
-		Quiz _quizzes = new Quiz ();
-		_quizzes.title = fileName;
+		Quiz _quiz = new Quiz ();
+		_quiz.title = fileName;
 		string currentLine;
 
 		using (StreamReader quizRead = new StreamReader (quiz_in)) 
@@ -79,7 +79,11 @@ public class ReadFiles : MonoBehaviour {
 
 				Question _question = new Question();
 				_question.setSentence (currentLine);
+				//print (currentLine);
+				//print ("sentences: "+ _question.sentence.Count);
+				_quiz.questions.Add (_question);
 			}
 		}
+		ControlCenter.Instance.quizzes.Add (_quiz);
 	}
 }

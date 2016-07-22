@@ -1,19 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FundamentalGameBehavior/DeleteGroup.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs">
     <Files>
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/AddGroup.cs" Line="16" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/AddGroup.cs" Line="3" Column="1" />
       <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Results.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Upload.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/QuizSelect.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="10" Column="37" />
       <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="107" Column="20" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteGroup.cs" Line="38" Column="28" />
-      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="42" Column="20" />
+      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="78" Column="4" />
+      <File FileName="Assets/Scripts/GUI/Buttons/OkAddGroup.cs" Line="29" Column="46" />
+      <File FileName="Assets/Scripts/GUI/Buttons/CancelAddGroup.cs" Line="12" Column="3" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteGroup.cs" Line="51" Column="3" />
+      <File FileName="Assets/Scripts/GUI/Buttons/SelectGroupButton.cs" Line="39" Column="46" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="9" Column="48" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="63" Column="3" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs" Line="43" Column="34" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
