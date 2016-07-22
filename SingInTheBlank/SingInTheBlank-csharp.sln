@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{F7892450-4BFA-E463-832B-940700730356}") = "SingInTheBlank", "Assembly-CSharp.csproj", "{CB4AF396-0FED-3344-BBC7-A391C597FD03}"
+Project("{F7892450-4BFA-E463-832B-940700730356}") = "SingInTheBlank", "Assembly-CSharp-vs.csproj", "{CB4AF396-0FED-3344-BBC7-A391C597FD03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,7 +17,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-			GlobalSection(MonoDevelopProperties) = preSolution
+				GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 
