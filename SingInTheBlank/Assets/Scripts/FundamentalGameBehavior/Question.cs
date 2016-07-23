@@ -20,6 +20,21 @@ public class Question{
 		}
 	}
 
+	//Return string of full sentence
+	public string getSentence (int idx)
+	{
+		int i = 0;
+		string temp = "";
+		foreach (Word wordy in sentence)
+		{
+			if (idx == i++)
+				temp += "___ ";
+			else
+				temp += wordy.word + " ";
+		}
+		return temp.Trim();
+	}
+
 	/*checks the user's answer*/
 	public bool answerCorrect()
 	{
