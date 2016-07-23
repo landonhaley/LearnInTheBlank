@@ -41,7 +41,6 @@ public class ReadFiles : MonoBehaviour {
 
 	void populateQuiz()
 	{
-
 		string[] quizFiles = Directory.GetFiles ("Quizzes");
 		foreach (string fileName in quizFiles) 
 			loadQuiz (fileName);
@@ -70,9 +69,11 @@ public class ReadFiles : MonoBehaviour {
 	void loadQuiz (string fileName)
 	{
 		FileStream quiz_in = new FileStream (fileName, FileMode.Open);
+		string dir = Directory.GetCurrentDirectory () + "\\";
 
 		Quiz _quiz = new Quiz ();
-		_quiz.title = fileName;
+		string currentFile = Path.GetFileName(dir + fileName);
+		_quiz.title = Path.GetFileNameWithoutExtension (currentFile);
 		string currentLine;
 
 		using (StreamReader quizRead = new StreamReader (quiz_in)) 

@@ -12,6 +12,10 @@
       <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="6" Column="55" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="34" Column="4" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs" Line="18" Column="42" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="32" Column="24" />
+      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="58" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="7" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
