@@ -36,9 +36,6 @@ public class SelectGroupButton : MonoBehaviour {
 		}
 
 		ControlCenter.Instance.quiz.selectedGroups = _groups;
-		foreach (Group groupy in ControlCenter.Instance.quiz.selectedGroups) {
-			print ("hi " + groupy.groupname);
-		}
 		ControlCenter.Instance.LoadQuizOverview ();
 	}
 }

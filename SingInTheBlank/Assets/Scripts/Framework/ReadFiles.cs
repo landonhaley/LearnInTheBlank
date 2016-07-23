@@ -45,6 +45,8 @@ public class ReadFiles : MonoBehaviour {
 		string[] quizFiles = Directory.GetFiles ("Quizzes");
 		foreach (string fileName in quizFiles) 
 			loadQuiz (fileName);
+
+
 		
 				
 

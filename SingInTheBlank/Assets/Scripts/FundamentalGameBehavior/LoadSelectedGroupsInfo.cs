@@ -41,7 +41,6 @@ public class LoadSelectedGroupsInfo : MonoBehaviour {
 			newItem.name = "Group " + i;
 			Text groupLabel = newItem.GetComponent<Text> ();
 			groupLabel.text = groupy.groupname;
-			print("yo "+ groupy.groupname);
 			newItem.transform.SetParent(content.transform, false);
 
 			//move and size the new item
