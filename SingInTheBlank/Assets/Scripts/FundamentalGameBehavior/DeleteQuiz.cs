@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System.IO;
 
 public class DeleteQuiz : MonoBehaviour {
 
@@ -16,10 +17,12 @@ public class DeleteQuiz : MonoBehaviour {
 	public void deleteToggles(){
 
 		IEnumerable<Toggle> activeToggles = toggles.ActiveToggles();
+		string dir = Directory.GetCurrentDirectory () + "\\Quizzes\\";
 
 		foreach (Toggle toggy in activeToggles) {
 			Text quizLabel = toggy.GetComponentInChildren<Text> ();
-			string _quiztitle = quizLabel.text;
+			string _quiztitle = dir + quizLabel.text + ".parse";
+			File.Delete (_quiztitle);
 			Destroy (GameObject.Find (toggy.name));
 		}
 

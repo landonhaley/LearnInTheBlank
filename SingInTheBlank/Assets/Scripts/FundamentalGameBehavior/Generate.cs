@@ -32,12 +32,13 @@ public class Generate : MonoBehaviour {
 		path = filePath.text;
 		p1 = Path.GetFileName (path);
 		instance = p1;
-		print (instance);
 		p1 = Path.ChangeExtension (p1, ".parse");
+		Quiz newQuiz = new Quiz ();
+		newQuiz.title = Path.GetFileNameWithoutExtension (p1);
+		ControlCenter.Instance.quizzes.Add (newQuiz);
 		printPath = quizDirectory + p1;
 
 		//printPath = Path.ChangeExtension (printPath, ".parse");
-		print (printPath);
 		//print (System.IO.Directory.GetCurrentDirectory());
 		//AppDomain.CurrentDomain.BaseDirectory
 		FileStream parseFile = new FileStream (printPath, FileMode.Create);
