@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\GUI\Buttons\CancelAddGroup.cs" />
      <Compile Include="Assets\Scripts\GUI\Buttons\CancelButton.cs" />
      <Compile Include="Assets\Scripts\GUI\Buttons\GiveQuizButton.cs" />
+     <Compile Include="Assets\Scripts\GUI\Buttons\GoToQuizzing.cs" />
      <Compile Include="Assets\Scripts\GUI\Buttons\OkAddGroup.cs" />
      <Compile Include="Assets\Scripts\GUI\Buttons\QuitButton.cs" />
      <Compile Include="Assets\Scripts\GUI\Buttons\SelectGroupButton.cs" />
@@ -82,11 +83,11 @@
      <Compile Include="Assets\Scripts\GUI\NewFileBrowser.cs" />
      <Compile Include="Assets\Scripts\GUI\QuizSelect.cs" />
      <Compile Include="Assets\Scripts\Program.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

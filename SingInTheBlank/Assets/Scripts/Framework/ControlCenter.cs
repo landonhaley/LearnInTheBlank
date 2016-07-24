@@ -8,7 +8,11 @@ public class ControlCenter : Singleton<ControlCenter> {
 	public List<Quiz> quizzes;
 	public List<Group> groups;
 	public Quiz quiz;
-	public int num;
+	public int qnum, gnum; 
+
+	public Group chosenGroup;
+	public Word chosenWord;
+	public string hiddenSentence, userAnswer;
 
 	public void Quit() 
 	{		
