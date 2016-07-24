@@ -9,55 +9,63 @@ public class RunQuiz : MonoBehaviour
 	Group chosenGroup;
 	Word chosenWord;
 	string hiddenSentence;
+	public Text CurrentGroupName;
+	public Text CurrentQuestion;
+
+
+	void Start(){
+		PrepareQuiz ();
+		GenerateQuestion ();
+	}
+
+	public void PrepareQuiz()
+	{
+		//Shuffle Group List
+		for (int i=0; i<ControlCenter.Instance.quiz.selectedGroups.Count; i++)
+		{
+			Group temp_g = ControlCenter.Instance.quiz.selectedGroups [i];
+			int idx = Random.Range (i, ControlCenter.Instance.quiz.selectedGroups.Count);
+			ControlCenter.Instance.quiz.selectedGroups [i] = ControlCenter.Instance.quiz.selectedGroups [idx];
+			ControlCenter.Instance.quiz.selectedGroups [idx] = temp_g;
+		}
+
+		//Reset question ticker
+		ControlCenter.Instance.qnum = 0;
+		ControlCenter.Instance.gnum = 0;
+
+	}
 	
 	public void GenerateQuestion()
 	{
-		int idxGroup, idxWord;
-		Quiz mainQuiz = ControlCenter.Instance.quiz;
+		//Choose group
+		int idxGroup = ControlCenter.Instance.gnum;
 
-		//Shuffle Group List
-		idxGroup = 0;
-		List<Group> gList = mainQuiz.selectedGroups;
-		for (int i = 0; i < gList.Count; i++) 
+		//Randomly choose hidden word
+		int idxQuiz = ControlCenter.Instance.qnum, i=0;
+		List<int> candidates = new List<int> ();
+		foreach (Word word in ControlCenter.Instance.quiz.questions[idxQuiz].sentence)
 		{
-			Group temp = gList [i];
-			idxGroup = Random.Range (i, gList.Count);
-			gList [i] = gList [idxGroup];
-			gList [idxGroup] = temp;
+			if (word.word.Length >= 4)
+				candidates.Add (i);
+			i++;
 		}
-			
-		foreach (Question question in mainQuiz.questions) 
-		{			
-			//Choose group
-			chosenGroup = gList [idxGroup++ % gList.Count];
 
-			//Randomly choose hidden word
-			int i = 0;
-			List<int> candidates = new List<int>();
-			foreach (Word word in question.sentence)
-			{
-				if (word.word.Length >= 4)
-					candidates.Add (i);
-				i++;
-			}
-			idxWord = candidates [Random.Range (0, candidates.Count)];
-			question.sentence [idxWord].blank = true;
-			chosenWord = question.sentence[idxWord];
+		//Save & mark
+		ControlCenter.Instance.chosenGroup = ControlCenter.Instance.quiz.selectedGroups [idxGroup++]; //save
+		ControlCenter.Instance.chosenWord = ControlCenter.Instance.quiz.questions[idxQuiz].sentence[candidates [Random.Range (0, candidates.Count)]]; //save
+		ControlCenter.Instance.hiddenSentence = ControlCenter.Instance.quiz.questions[idxQuiz].getSentence(Random.Range (0, candidates.Count)); //save
+		ControlCenter.Instance.quiz.questions[idxQuiz].sentence [candidates [Random.Range (0, candidates.Count)]].blank = true; //mark that word as blank
 
-			//Generate sentence string
-			hiddenSentence = question.getSentence(idxWord);
+		//Plug data into GUI
+		CurrentGroupName.text = ControlCenter.Instance.chosenGroup.groupname;
+		CurrentQuestion.text = ControlCenter.Instance.hiddenSentence;
 
-
-			//At this point, we have the data to plug into GUI
-
-		}
 	}
 
-	public bool checkCorrect()
+	public void checkSubmission(string input)
 	{
-		string answer = "correct"; //replace this with what user inputted
-		bool check;
-
-		return (answer.ToLower () == chosenWord.word.ToLower ());
+		bool answer = (ControlCenter.Instance.userAnswer.ToLower () == ControlCenter.Instance.chosenWord.word.ToLower ());
 	}
+
+
 }

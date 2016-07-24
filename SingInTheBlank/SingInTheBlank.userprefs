@@ -1,27 +1,21 @@
-<Properties StartupItem="Assembly-CSharp.csproj">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs">
     <Files>
-      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/SaveLists.cs" Line="27" Column="3" />
-      <File FileName="Assets/Scripts/GUI/Buttons/SelectGroupButton.cs" Line="38" Column="56" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadSelectedQuiz.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="38" Column="46" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/SaveLists.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GUI/Buttons/SelectGroupButton.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadSelectedGroupsInfo.cs" Line="43" Column="39" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Quiz.cs" Line="5" Column="19" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadSelectedQuiz.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs" Line="56" Column="28" />
-      <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="6" Column="55" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="34" Column="4" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs" Line="59" Column="117" />
+      <File FileName="Assets/Scripts/Framework/ControlCenter.cs" Line="1" Column="19" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs" Line="18" Column="42" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="32" Column="24" />
-      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="58" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="7" Column="42" />
-      <File FileName="Assets/Scripts/GUI/Buttons/OkAddGroup.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="8" Column="2" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteGroup.cs" Line="32" Column="84" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="45" Column="14" />
-      <File FileName="Assets/Scripts/GUI/Buttons/SelectQuizButton.cs" Line="34" Column="4" />
-      <File FileName="Assets/Scripts/GUI/GroupSelect.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="18" Column="26" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

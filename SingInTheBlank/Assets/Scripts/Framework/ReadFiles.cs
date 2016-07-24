@@ -36,7 +36,6 @@ public class ReadFiles : MonoBehaviour {
 		}
 
 		ControlCenter.Instance.CreateGroups (temp);
-		ControlCenter.Instance.num = 9;
 	}
 
 	void populateQuiz()
