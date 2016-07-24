@@ -9,7 +9,7 @@ public class SelectGroupButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		print(ControlCenter.Instance.quiz.title);
+		
 	}
 	
 	// Update is called once per frame

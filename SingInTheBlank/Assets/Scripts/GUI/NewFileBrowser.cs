@@ -14,9 +14,7 @@ using UnityEngine;
 
 public class NewFileBrowser : MonoBehaviour
 {
-	[MenuItem(" Example/Load Textures to Folder")]
-
-
+	[MenuItem(" Example/Load Textures to Folder")] 
 
 	public void Apply()
 	{
@@ -46,21 +44,6 @@ public class NewFileBrowser : MonoBehaviour
 
 
 	}
-
-	public void createParse()
-	{
-		//InputField inputFieldOb = inputFieldGo.GetComponent<InputField> ();
-		//string path;
-		//string printPath;
-		//List<string> sentence;
-		//path = inputFieldOb.text;
-		//printPath = path;
-		//printPath = Path.ChangeExtension (printPath, ".parse");
-		//FileStream parseFile = new FileStream (printPath, FileMode.Create);
-
-		
-	}
-
 		
 
 
