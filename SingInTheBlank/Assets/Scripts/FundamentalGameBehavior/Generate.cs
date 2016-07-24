@@ -1,5 +1,4 @@
-﻿using UnityEditor;
-using System.IO;
+﻿using System.IO;
 using UnityEngine.UI;
 using System.Collections;
 using System;
@@ -24,14 +23,13 @@ public class Generate : MonoBehaviour {
 		string path;
 		string p1;
 		string printPath;
-		string instance;
+		//string instance;
 		string quizDirectory = System.IO.Directory.GetCurrentDirectory() + "/Quizzes/";
 
 		List<string> sentences;
 		sentences = upload(filePath.text);
 		path = filePath.text;
 		p1 = Path.GetFileName (path);
-		instance = p1;
 		p1 = Path.ChangeExtension (p1, ".parse");
 		Quiz newQuiz = new Quiz ();
 		newQuiz.title = Path.GetFileNameWithoutExtension (p1);

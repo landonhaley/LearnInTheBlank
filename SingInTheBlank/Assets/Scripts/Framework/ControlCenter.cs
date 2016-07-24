@@ -97,6 +97,12 @@ public class ControlCenter : Singleton<ControlCenter> {
 		GameObject.DontDestroyOnLoad(gameObject);
 	}
 
+	public void LoadQuizResults()
+	{
+		SceneManager.LoadScene(3);
+		GameObject.DontDestroyOnLoad(gameObject);
+	}
+
 	/*public void LoadScore()
 	{
 		_playerData = PlayerControl.Instance.GetAllPlayerData ();
