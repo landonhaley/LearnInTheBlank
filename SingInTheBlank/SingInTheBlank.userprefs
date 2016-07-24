@@ -1,4 +1,4 @@
-﻿<Properties StartupItem="Assembly-CSharp.csproj">
+<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs">
     <Files>
@@ -16,6 +16,12 @@
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="32" Column="24" />
       <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="58" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="7" Column="42" />
+      <File FileName="Assets/Scripts/GUI/Buttons/OkAddGroup.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="8" Column="2" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteGroup.cs" Line="32" Column="84" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="45" Column="14" />
+      <File FileName="Assets/Scripts/GUI/Buttons/SelectQuizButton.cs" Line="34" Column="4" />
+      <File FileName="Assets/Scripts/GUI/GroupSelect.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
