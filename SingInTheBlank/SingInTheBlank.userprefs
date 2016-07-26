@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GUI/NewFileBrowser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GUI/Buttons/NextQuestion.cs">
     <Files>
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs" Line="24" Column="2" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="26" Column="20" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/RunQuiz.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadSelectedQuiz.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Framework/ReadFiles.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/SaveLists.cs" Line="1" Column="1" />
@@ -13,13 +14,13 @@
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Question.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/Word.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadQuizzes.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/Generate.cs" Line="3" Column="26" />
       <File FileName="Assets/Scripts/Framework/Singleton.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/FundamentalGameBehavior/DeleteQuiz.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadFinalResults.cs" Line="57" Column="105" />
-      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadFinalResults.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/LoadGroups.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/GUI/NewFileBrowser.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/GUI/Buttons/NextQuestion.cs" Line="34" Column="9" />
+      <File FileName="Assets/Scripts/GUI/Buttons/NextQuestion.cs" Line="39" Column="7" />
+      <File FileName="Assets/Scripts/FundamentalGameBehavior/Upload.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
